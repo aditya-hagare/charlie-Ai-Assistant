@@ -1,5 +1,6 @@
 # charlie-Ai-Assistant
-images 1= 
+images 1= https://github.com/aditya-hagare/charlie-Ai-Assistant/blob/main/Screenshot%202026-02-28%20174644.png
+
 🤖 Charlie AI Assistant
 🚀 Project Overview
 
