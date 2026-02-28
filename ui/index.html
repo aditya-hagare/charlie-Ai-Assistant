@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CHARLIE AI</title>
+    <link rel="stylesheet" href="/ui/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+
+
+    <!-- LEFT PANEL -->
+    <aside class="left-panel">
+        <h2>Live Feed</h2>
+
+        <div class="info-card">
+            <h3>🌦 Weather</h3>
+            <p id="weather-text">Loading...</p>
+        </div>
+
+        <div class="info-card">
+            <h3>📰 News</h3>
+            <ul id="news-list"></ul>
+        </div>
+
+        <div class="info-card">
+            <h3>📈 Stocks</h3>
+            <p id="stock-text">Loading...</p>
+        </div>
+
+        <div class="history-box">
+            <h3>📜 History</h3>
+            <div class="history" id="history"></div>
+        </div>
+    </aside>
+
+    <!-- CENTER PANEL -->
+    <main class="center">
+        <canvas id="globe"></canvas>
+
+        <div class="status">
+            <p id="status-text">CHARLIE READY</p>
+
+            <div class="mic" id="mic-btn">
+                🎤
+            </div>
+        </div>
+    </main>
+
+    <!-- RIGHT PANEL -->
+    <aside class="right-panel">
+        <h2>Commands</h2>
+
+        <div class="commands">
+            <div class="cmd">🌐 Open Chrome</div>
+            <div class="cmd">📺 Open YouTube</div>
+            <div class="cmd">💻 Open Colab</div>
+            <div class="cmd">🎵 Play Music</div>
+        </div>
+
+        <div class="chat-container">
+            <div id="chat-messages"></div>
+
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask Charlie anything..." />
+                <button type="button" onclick="sendMessage()">➤</button>
+                <button id="tts-toggle" type="button">🔊</button>
+            </div>
+        </div>
+    </aside>
+
+</div>
+
+<script src="/ui/app.js"></script>
+</body>
+</html>
